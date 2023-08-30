@@ -1,0 +1,40 @@
+[project]
+name = "MyToDo"
+version = "0.1.2"
+description = """\
+The ToDo CLI App with Typer is a simple command-line application designed to help you manage your tasks efficiently. \ 
+This lightweight tool offers a straightforward interface for adding, listing, and removing tasks from your ToDo list.
+"""
+readme = "README.md"
+authors = [{name = "Chaance Graves"}]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 4 - Beta"
+]
+
+dependencies = [
+    "typer",
+    "pydantic",
+    "rich",
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocstrings[python]"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "nox"
+]
+
+dev = [
+    "ipython",
+    "pyreadline",
+    "jupyterlab",
+    "ruff"
+]
+
+[project.urls]
+Homepage = "https://github.com/ctgadget-snake-lab/demo-cli"
+Changelog = "https://github.com/ctgadget-snake-lab/demo-cli/releases"
+Issues = "https://github.com/ctgadget-snake-lab/demo-cli/issues"
